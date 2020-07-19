@@ -7,7 +7,11 @@
         <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700%7CEwert' rel='stylesheet' type='text/css'>
         <style>
             body {
-  background: rgb(243, 201, 201);
+               background-image: url(images/back.jpg);
+               background-size: cover;
+               background-attachment: fixed;
+               background-repeat: no-repeat;
+               
   text-align: center;
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
@@ -23,13 +27,53 @@
   font-weight: normal;
   color: #B109AA;
 }
+#wel1 {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    transform: rotate(-30deg);
+    font-family: cursive;
+    letter-spacing: 3px;
+    color: white;
+    animation: font 3s alternate infinite;
+    
+}
+@keyframes font {
+    0% {
+       font-size: 1px; }
+    100% {
+        font-size: 30px;
+        }
+   
+  
+}
+#wel2 {
+    position: absolute;
+    top: 150px;
+    right:150px;
+    transform: rotate(30deg);
+    font-family: cursive;
+    letter-spacing: 3px;
+    color: white;
+    animation: font1 3s alternate-reverse infinite;
+   
+}
+@keyframes font1 {
+    0% {
+       font-size: 1px; }
+    100% {
+        font-size: 30px;
+        }
+   
+  
+}
 
            span {
             text-decoration: none;
               color: white;
               text-align: left;
               
-            padding: 20px;
+                padding: 20px;
                 padding-top: 30px;;
                 width: 250px;
                 height: 50px;
@@ -51,6 +95,7 @@
            #names {
               
                width: 100%;
+               padding-top: 4px;
                height: 30px;
                position: absolute;
                top:570px;
@@ -115,12 +160,14 @@
         <header>
             <h1><strong>Carnival!</strong></h1>
           </header>
+          <div id="wel1">Welcome!</div>
+          <div id="wel2">Welcome!</div>
       
             <a href="game.html" class="link"><span>Start Game</span></a>
            
                 <div id="runner"></div>
                 <div id="road" ></div>
-           <div id="names">group7:   Ying  luo  ,  Chunmei Liu  ,  Zahra Arablou</div>
+           <div id="names">group 7:   Ying  luo  ,  Chunmei Liu  ,  Zahra Arablou</div>
     </BOdy>
     </html>
           
